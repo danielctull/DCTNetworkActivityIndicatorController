@@ -29,7 +29,10 @@ static DCTNetworkActivityIndicatorController *sharedInstance = nil;
 @synthesize networkActivity;
 
 + (void)load {
-	[DCTNetworkActivityIndicatorController sharedNetworkActivityIndicatorController];
+	
+	@autoreleasepool {
+	    [DCTNetworkActivityIndicatorController sharedNetworkActivityIndicatorController];
+	}
 }
 
 + (DCTNetworkActivityIndicatorController *)sharedNetworkActivityIndicatorController {
