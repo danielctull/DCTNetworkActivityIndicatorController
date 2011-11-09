@@ -7,6 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#ifndef dctnetworkactivityindicatorcontroller
+#define dctnetworkactivityindicatorcontroller_1_0       10000
+#define dctnetworkactivityindicatorcontroller_1_0_1     10001
+#define dctnetworkactivityindicatorcontroller_1_0_2     10002
+#define dctnetworkactivityindicatorcontroller           dctnetworkactivityindicatorcontroller_1_0_2
+#endif
 
 extern NSString *const DCTNetworkActivityIndicatorControllerNetworkActivityChangedNotification;
 
