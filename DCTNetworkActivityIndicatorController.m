@@ -66,27 +66,31 @@ static DCTNetworkActivityIndicatorController *sharedInstance = nil;
 
 - (void)decrementNetworkActivity {
 	
-	NSAssert((networkActivity > 0), @"%@ increment/decrement calls mismatch", self);
+	dispatch_async(dispatch_get_main_queue(), ^{
+		NSAssert((networkActivity > 0), @"%@ increment/decrement calls mismatch", self);
+		[self willChangeValueForKey:DCTInternal_NetworkActivityIndicatorControllerNetworkActivityKey];
+		networkActivity--;
+		[self didChangeValueForKey:DCTInternal_NetworkActivityIndicatorControllerNetworkActivityKey];
 	
-	[self willChangeValueForKey:DCTInternal_NetworkActivityIndicatorControllerNetworkActivityKey];
-	networkActivity--;
-	[self didChangeValueForKey:DCTInternal_NetworkActivityIndicatorControllerNetworkActivityKey];
-	
-	[self dctInternal_calculateNetworkActivity];
+		[self dctInternal_calculateNetworkActivity];
+	});
 }
 
 - (void)incrementNetworkActivity {
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[self willChangeValueForKey:DCTInternal_NetworkActivityIndicatorControllerNetworkActivityKey];
+		networkActivity++;
+		[self didChangeValueForKey:DCTInternal_NetworkActivityIndicatorControllerNetworkActivityKey];
 	
-	[self willChangeValueForKey:DCTInternal_NetworkActivityIndicatorControllerNetworkActivityKey];
-	networkActivity++;
-	[self didChangeValueForKey:DCTInternal_NetworkActivityIndicatorControllerNetworkActivityKey];
-	
-	[self dctInternal_calculateNetworkActivity];
+		[self dctInternal_calculateNetworkActivity];
+	});
 }
 
 - (void)dctInternal_calculateNetworkActivity {
-	[[NSNotificationCenter defaultCenter] postNotificationName:DCTNetworkActivityIndicatorControllerNetworkActivityChangedNotification object:self];
-	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:(networkActivity > 0)];
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[[NSNotificationCenter defaultCenter] postNotificationName:DCTNetworkActivityIndicatorControllerNetworkActivityChangedNotification object:self];
+		[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:(networkActivity > 0)];
+	});
 }
 
 - (NSString *)description {
