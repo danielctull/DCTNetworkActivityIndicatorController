@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "DCTNetworkActivityIndicatorController.h"
-#import "NSObject+DCTKVOExtras.h"
 
 // These tie to DCTConnectionQueue
 NSString *const DCTInternal_NetworkActivityIndicatorControllerConnectionQueueActiveConnectionCountIncreasedNotification = @"DCTConnectionQueueActiveConnectionCountIncreasedNotification";
