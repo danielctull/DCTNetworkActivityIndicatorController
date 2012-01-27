@@ -13,7 +13,8 @@
 #define dctnetworkactivityindicatorcontroller_1_0       10000
 #define dctnetworkactivityindicatorcontroller_1_0_1     10001
 #define dctnetworkactivityindicatorcontroller_1_0_2     10002
-#define dctnetworkactivityindicatorcontroller           dctnetworkactivityindicatorcontroller_1_0_2
+#define dctnetworkactivityindicatorcontroller_1_0_3     10003
+#define dctnetworkactivityindicatorcontroller           dctnetworkactivityindicatorcontroller_1_0_3
 #endif
 
 extern NSString *const DCTNetworkActivityIndicatorControllerNetworkActivityChangedNotification;
