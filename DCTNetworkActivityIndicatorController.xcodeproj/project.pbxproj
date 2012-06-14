@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24F6ECA8158A2EA900CEDD41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F6ECA7158A2EA900CEDD41 /* Foundation.framework */; };
+		24F6ECAE158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F6ECAD158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m */; };
+		24F6ECB6158A2EA900CEDD41 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F6ECB5158A2EA900CEDD41 /* SenTestingKit.framework */; };
+		24F6ECB8158A2EAA00CEDD41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F6ECB7158A2EA900CEDD41 /* UIKit.framework */; };
+		24F6ECB9158A2EAA00CEDD41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F6ECA7158A2EA900CEDD41 /* Foundation.framework */; };
+		24F6ECBC158A2EAA00CEDD41 /* libDCTNetworkActivityIndicatorController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F6ECA4158A2EA900CEDD41 /* libDCTNetworkActivityIndicatorController.a */; };
+		24F6ECC2158A2EAA00CEDD41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24F6ECC0158A2EAA00CEDD41 /* InfoPlist.strings */; };
+		24F6ECC5158A2EAA00CEDD41 /* DCTNetworkActivityIndicatorControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F6ECC4158A2EAA00CEDD41 /* DCTNetworkActivityIndicatorControllerTests.m */; };
+		24F6ECDA158A317500CEDD41 /* DCTNetworkActivityIndicatorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F6ECAC158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24F6ECBA158A2EAA00CEDD41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24F6EC9B158A2EA900CEDD41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24F6ECA3158A2EA900CEDD41;
+			remoteInfo = DCTNetworkActivityIndicatorController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24F6ECA4158A2EA900CEDD41 /* libDCTNetworkActivityIndicatorController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCTNetworkActivityIndicatorController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F6ECA7158A2EA900CEDD41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		24F6ECAC158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTNetworkActivityIndicatorController.h; sourceTree = "<group>"; };
+		24F6ECAD158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTNetworkActivityIndicatorController.m; sourceTree = "<group>"; };
+		24F6ECB4158A2EA900CEDD41 /* DCTNetworkActivityIndicatorControllerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCTNetworkActivityIndicatorControllerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F6ECB5158A2EA900CEDD41 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		24F6ECB7158A2EA900CEDD41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		24F6ECBF158A2EAA00CEDD41 /* DCTNetworkActivityIndicatorControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCTNetworkActivityIndicatorControllerTests-Info.plist"; sourceTree = "<group>"; };
+		24F6ECC1158A2EAA00CEDD41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		24F6ECC3158A2EAA00CEDD41 /* DCTNetworkActivityIndicatorControllerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTNetworkActivityIndicatorControllerTests.h; sourceTree = "<group>"; };
+		24F6ECC4158A2EAA00CEDD41 /* DCTNetworkActivityIndicatorControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTNetworkActivityIndicatorControllerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24F6ECA1158A2EA900CEDD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F6ECA8158A2EA900CEDD41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F6ECB0158A2EA900CEDD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F6ECB6158A2EA900CEDD41 /* SenTestingKit.framework in Frameworks */,
+				24F6ECB8158A2EAA00CEDD41 /* UIKit.framework in Frameworks */,
+				24F6ECB9158A2EAA00CEDD41 /* Foundation.framework in Frameworks */,
+				24F6ECBC158A2EAA00CEDD41 /* libDCTNetworkActivityIndicatorController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24F6EC99158A2EA900CEDD41 = {
+			isa = PBXGroup;
+			children = (
+				24F6ECA9158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController */,
+				24F6ECBD158A2EAA00CEDD41 /* DCTNetworkActivityIndicatorControllerTests */,
+				24F6ECA6158A2EA900CEDD41 /* Frameworks */,
+				24F6ECA5158A2EA900CEDD41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24F6ECA5158A2EA900CEDD41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24F6ECA4158A2EA900CEDD41 /* libDCTNetworkActivityIndicatorController.a */,
+				24F6ECB4158A2EA900CEDD41 /* DCTNetworkActivityIndicatorControllerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24F6ECA6158A2EA900CEDD41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24F6ECA7158A2EA900CEDD41 /* Foundation.framework */,
+				24F6ECB5158A2EA900CEDD41 /* SenTestingKit.framework */,
+				24F6ECB7158A2EA900CEDD41 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24F6ECA9158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController */ = {
+			isa = PBXGroup;
+			children = (
+				24F6ECAC158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.h */,
+				24F6ECAD158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m */,
+			);
+			path = DCTNetworkActivityIndicatorController;
+			sourceTree = "<group>";
+		};
+		24F6ECBD158A2EAA00CEDD41 /* DCTNetworkActivityIndicatorControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				24F6ECC3158A2EAA00CEDD41 /* DCTNetworkActivityIndicatorControllerTests.h */,
+				24F6ECC4158A2EAA00CEDD41 /* DCTNetworkActivityIndicatorControllerTests.m */,
+				24F6ECBE158A2EAA00CEDD41 /* Supporting Files */,
+			);
+			path = DCTNetworkActivityIndicatorControllerTests;
+			sourceTree = "<group>";
+		};
+		24F6ECBE158A2EAA00CEDD41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24F6ECBF158A2EAA00CEDD41 /* DCTNetworkActivityIndicatorControllerTests-Info.plist */,
+				24F6ECC0158A2EAA00CEDD41 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		24F6ECA2158A2EA900CEDD41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F6ECDA158A317500CEDD41 /* DCTNetworkActivityIndicatorController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		24F6ECA3158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F6ECC8158A2EAA00CEDD41 /* Build configuration list for PBXNativeTarget "DCTNetworkActivityIndicatorController" */;
+			buildPhases = (
+				24F6ECA0158A2EA900CEDD41 /* Sources */,
+				24F6ECA1158A2EA900CEDD41 /* Frameworks */,
+				24F6ECA2158A2EA900CEDD41 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCTNetworkActivityIndicatorController;
+			productName = DCTNetworkActivityIndicatorController;
+			productReference = 24F6ECA4158A2EA900CEDD41 /* libDCTNetworkActivityIndicatorController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		24F6ECB3158A2EA900CEDD41 /* DCTNetworkActivityIndicatorControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F6ECCB158A2EAA00CEDD41 /* Build configuration list for PBXNativeTarget "DCTNetworkActivityIndicatorControllerTests" */;
+			buildPhases = (
+				24F6ECAF158A2EA900CEDD41 /* Sources */,
+				24F6ECB0158A2EA900CEDD41 /* Frameworks */,
+				24F6ECB1158A2EA900CEDD41 /* Resources */,
+				24F6ECB2158A2EA900CEDD41 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24F6ECBB158A2EAA00CEDD41 /* PBXTargetDependency */,
+			);
+			name = DCTNetworkActivityIndicatorControllerTests;
+			productName = DCTNetworkActivityIndicatorControllerTests;
+			productReference = 24F6ECB4158A2EA900CEDD41 /* DCTNetworkActivityIndicatorControllerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24F6EC9B158A2EA900CEDD41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Daniel Tull";
+			};
+			buildConfigurationList = 24F6EC9E158A2EA900CEDD41 /* Build configuration list for PBXProject "DCTNetworkActivityIndicatorController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 24F6EC99158A2EA900CEDD41;
+			productRefGroup = 24F6ECA5158A2EA900CEDD41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24F6ECA3158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController */,
+				24F6ECB3158A2EA900CEDD41 /* DCTNetworkActivityIndicatorControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24F6ECB1158A2EA900CEDD41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F6ECC2158A2EAA00CEDD41 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24F6ECB2158A2EA900CEDD41 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24F6ECA0158A2EA900CEDD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F6ECAE158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F6ECAF158A2EA900CEDD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F6ECC5158A2EAA00CEDD41 /* DCTNetworkActivityIndicatorControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24F6ECBB158A2EAA00CEDD41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24F6ECA3158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController */;
+			targetProxy = 24F6ECBA158A2EAA00CEDD41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24F6ECC0158A2EAA00CEDD41 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24F6ECC1158A2EAA00CEDD41 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24F6ECC6158A2EAA00CEDD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24F6ECC7158A2EAA00CEDD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24F6ECC9158A2EAA00CEDD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DCTNetworkActivityIndicatorController.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		24F6ECCA158A2EAA00CEDD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DCTNetworkActivityIndicatorController.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		24F6ECCC158A2EAA00CEDD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCTNetworkActivityIndicatorController/DCTNetworkActivityIndicatorController-Prefix.pch";
+				INFOPLIST_FILE = "DCTNetworkActivityIndicatorControllerTests/DCTNetworkActivityIndicatorControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		24F6ECCD158A2EAA00CEDD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCTNetworkActivityIndicatorController/DCTNetworkActivityIndicatorController-Prefix.pch";
+				INFOPLIST_FILE = "DCTNetworkActivityIndicatorControllerTests/DCTNetworkActivityIndicatorControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24F6EC9E158A2EA900CEDD41 /* Build configuration list for PBXProject "DCTNetworkActivityIndicatorController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F6ECC6158A2EAA00CEDD41 /* Debug */,
+				24F6ECC7158A2EAA00CEDD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F6ECC8158A2EAA00CEDD41 /* Build configuration list for PBXNativeTarget "DCTNetworkActivityIndicatorController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F6ECC9158A2EAA00CEDD41 /* Debug */,
+				24F6ECCA158A2EAA00CEDD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F6ECCB158A2EAA00CEDD41 /* Build configuration list for PBXNativeTarget "DCTNetworkActivityIndicatorControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F6ECCC158A2EAA00CEDD41 /* Debug */,
+				24F6ECCD158A2EAA00CEDD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24F6EC9B158A2EA900CEDD41 /* Project object */;
+}
