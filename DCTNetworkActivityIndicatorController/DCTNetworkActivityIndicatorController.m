@@ -10,27 +10,19 @@
 #import "DCTNetworkActivityIndicatorController.h"
 
 // These tie to DCTConnectionQueue
-NSString *const DCTInternal_NetworkActivityIndicatorControllerConnectionQueueActiveConnectionCountIncreasedNotification = @"DCTConnectionQueueActiveConnectionCountIncreasedNotification";
-NSString *const DCTInternal_NetworkActivityIndicatorControllerConnectionQueueActiveConnectionCountDecreasedNotification = @"DCTConnectionQueueActiveConnectionCountDecreasedNotification";
+NSString *const DCTNetworkActivityIndicatorControllerConnectionQueueActiveConnectionCountIncreasedNotification = @"DCTConnectionQueueActiveConnectionCountIncreasedNotification";
+NSString *const DCTNetworkActivityIndicatorControllerConnectionQueueActiveConnectionCountDecreasedNotification = @"DCTConnectionQueueActiveConnectionCountDecreasedNotification";
 
-NSString *const DCTInternal_NetworkActivityIndicatorControllerNetworkActivityKey = @"networkActivity";
-
+NSString *const DCTNetworkActivityIndicatorControllerNetworkActivityKey = @"networkActivity";
 NSString *const DCTNetworkActivityIndicatorControllerNetworkActivityChangedNotification = @"DCTNetworkActivityIndicatorControllerNetworkActivityChangedNotification";
 
 static DCTNetworkActivityIndicatorController *sharedInstance = nil;
 
-@interface DCTNetworkActivityIndicatorController ()
-- (void)dctInternal_calculateNetworkActivity;
-@end
-
 @implementation DCTNetworkActivityIndicatorController {
-	dispatch_queue_t _queue;
+	__strong NSOperationQueue *_operationQueue;
 }
 
-@synthesize networkActivity;
-
 + (void)load {
-	
 	@autoreleasepool {
 	    [DCTNetworkActivityIndicatorController sharedNetworkActivityIndicatorController];
 	}
@@ -50,51 +42,49 @@ static DCTNetworkActivityIndicatorController *sharedInstance = nil;
     
     if (!(self = [super init])) return nil;
     
-	networkActivity = 0;
+	_networkActivity = 0;
 	
 	NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-	[notificationCenter addObserver:self selector:@selector(incrementNetworkActivity) name:DCTInternal_NetworkActivityIndicatorControllerConnectionQueueActiveConnectionCountIncreasedNotification object:nil];
-	[notificationCenter addObserver:self selector:@selector(decrementNetworkActivity) name:DCTInternal_NetworkActivityIndicatorControllerConnectionQueueActiveConnectionCountDecreasedNotification object:nil];
-	_queue = dispatch_queue_create("uk.co.danieltull.DCTNetworkActivityIndicatorController", NULL);
+	[notificationCenter addObserver:self selector:@selector(incrementNetworkActivity) name:DCTNetworkActivityIndicatorControllerConnectionQueueActiveConnectionCountIncreasedNotification object:nil];
+	[notificationCenter addObserver:self selector:@selector(decrementNetworkActivity) name:DCTNetworkActivityIndicatorControllerConnectionQueueActiveConnectionCountDecreasedNotification object:nil];
+	_operationQueue = [NSOperationQueue new];
+	[_operationQueue setMaxConcurrentOperationCount:1];
+	[_operationQueue setName:@"uk.co.danieltull.DCTNetworkActivityIndicatorController"];
 	
 	return self;
 }
 
 - (void)dealloc {
-	dispatch_release(_queue);
 	NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-	
-	[notificationCenter removeObserver:self name:DCTInternal_NetworkActivityIndicatorControllerConnectionQueueActiveConnectionCountIncreasedNotification object:nil];
-	[notificationCenter removeObserver:self name:DCTInternal_NetworkActivityIndicatorControllerConnectionQueueActiveConnectionCountDecreasedNotification object:nil];
+	[notificationCenter removeObserver:self name:DCTNetworkActivityIndicatorControllerConnectionQueueActiveConnectionCountIncreasedNotification object:nil];
+	[notificationCenter removeObserver:self name:DCTNetworkActivityIndicatorControllerConnectionQueueActiveConnectionCountDecreasedNotification object:nil];
 }
 
 - (void)decrementNetworkActivity {
 	
-	dispatch_async(_queue, ^{
-		NSAssert((networkActivity > 0), @"%@ increment/decrement calls mismatch", self);
-		[self willChangeValueForKey:DCTInternal_NetworkActivityIndicatorControllerNetworkActivityKey];
-		networkActivity--;
-		[self didChangeValueForKey:DCTInternal_NetworkActivityIndicatorControllerNetworkActivityKey];
+	[_operationQueue addOperationWithBlock:^{
+		NSAssert((self.networkActivity > 0), @"%@ increment/decrement calls mismatch", self);
+		[self willChangeValueForKey:DCTNetworkActivityIndicatorControllerNetworkActivityKey];
+		_networkActivity--;
+		[self didChangeValueForKey:DCTNetworkActivityIndicatorControllerNetworkActivityKey];
 	
-		[self dctInternal_calculateNetworkActivity];
-	});
+		[self _calculateNetworkActivity];
+	}];
 }
 
 - (void)incrementNetworkActivity {
-	dispatch_async(_queue, ^{
-		[self willChangeValueForKey:DCTInternal_NetworkActivityIndicatorControllerNetworkActivityKey];
-		networkActivity++;
-		[self didChangeValueForKey:DCTInternal_NetworkActivityIndicatorControllerNetworkActivityKey];
+	[_operationQueue addOperationWithBlock:^{
+		[self willChangeValueForKey:DCTNetworkActivityIndicatorControllerNetworkActivityKey];
+		_networkActivity++;
+		[self didChangeValueForKey:DCTNetworkActivityIndicatorControllerNetworkActivityKey];
 	
-		[self dctInternal_calculateNetworkActivity];
-	});
+		[self _calculateNetworkActivity];
+	}];
 }
 
-- (void)dctInternal_calculateNetworkActivity {
-	dispatch_async(_queue, ^{
-		[[NSNotificationCenter defaultCenter] postNotificationName:DCTNetworkActivityIndicatorControllerNetworkActivityChangedNotification object:self];
-		[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:(networkActivity > 0)];
-	});
+- (void)_calculateNetworkActivity {
+	[[NSNotificationCenter defaultCenter] postNotificationName:DCTNetworkActivityIndicatorControllerNetworkActivityChangedNotification object:self];
+	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:(self.networkActivity > 0)];
 }
 
 - (NSString *)description {
