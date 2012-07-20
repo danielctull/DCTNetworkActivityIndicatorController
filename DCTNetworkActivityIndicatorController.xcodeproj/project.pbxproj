@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24F6ECA8158A2EA900CEDD41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F6ECA7158A2EA900CEDD41 /* Foundation.framework */; };
-		24F6ECAE158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F6ECAD158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m */; };
+		2437B76B15B97F4400750117 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F6ECA7158A2EA900CEDD41 /* Foundation.framework */; };
+		2437B77615B97F7E00750117 /* DCTNetworkActivityIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F6ECAD158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m */; };
+		2437B77715B97F8000750117 /* DCTNetworkActivityIndicatorController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24F6ECAC158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.h */; };
 		24F6ECB6158A2EA900CEDD41 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F6ECB5158A2EA900CEDD41 /* SenTestingKit.framework */; };
 		24F6ECB8158A2EAA00CEDD41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F6ECB7158A2EA900CEDD41 /* UIKit.framework */; };
 		24F6ECB9158A2EAA00CEDD41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F6ECA7158A2EA900CEDD41 /* Foundation.framework */; };
-		24F6ECBC158A2EAA00CEDD41 /* libDCTNetworkActivityIndicatorController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F6ECA4158A2EA900CEDD41 /* libDCTNetworkActivityIndicatorController.a */; };
 		24F6ECC2158A2EAA00CEDD41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24F6ECC0158A2EAA00CEDD41 /* InfoPlist.strings */; };
 		24F6ECC5158A2EAA00CEDD41 /* DCTNetworkActivityIndicatorControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F6ECC4158A2EAA00CEDD41 /* DCTNetworkActivityIndicatorControllerTests.m */; };
-		24F6ECDA158A317500CEDD41 /* DCTNetworkActivityIndicatorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F6ECAC158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		24F6ECBA158A2EAA00CEDD41 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 24F6EC9B158A2EA900CEDD41 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 24F6ECA3158A2EA900CEDD41;
-			remoteInfo = DCTNetworkActivityIndicatorController;
+/* Begin PBXCopyFilesBuildPhase section */
+		2437B76815B97F4400750117 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				2437B77715B97F8000750117 /* DCTNetworkActivityIndicatorController.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		24F6ECA4158A2EA900CEDD41 /* libDCTNetworkActivityIndicatorController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCTNetworkActivityIndicatorController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2437B76A15B97F4400750117 /* libDCTNetworkActivityIndicatorController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCTNetworkActivityIndicatorController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F6ECA7158A2EA900CEDD41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		24F6ECAC158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTNetworkActivityIndicatorController.h; sourceTree = "<group>"; };
 		24F6ECAD158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTNetworkActivityIndicatorController.m; sourceTree = "<group>"; };
@@ -43,11 +45,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		24F6ECA1158A2EA900CEDD41 /* Frameworks */ = {
+		2437B76715B97F4400750117 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24F6ECA8158A2EA900CEDD41 /* Foundation.framework in Frameworks */,
+				2437B76B15B97F4400750117 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +60,6 @@
 				24F6ECB6158A2EA900CEDD41 /* SenTestingKit.framework in Frameworks */,
 				24F6ECB8158A2EAA00CEDD41 /* UIKit.framework in Frameworks */,
 				24F6ECB9158A2EAA00CEDD41 /* Foundation.framework in Frameworks */,
-				24F6ECBC158A2EAA00CEDD41 /* libDCTNetworkActivityIndicatorController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +79,8 @@
 		24F6ECA5158A2EA900CEDD41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24F6ECA4158A2EA900CEDD41 /* libDCTNetworkActivityIndicatorController.a */,
 				24F6ECB4158A2EA900CEDD41 /* DCTNetworkActivityIndicatorControllerTests.octest */,
+				2437B76A15B97F4400750117 /* libDCTNetworkActivityIndicatorController.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,25 +125,14 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		24F6ECA2158A2EA900CEDD41 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				24F6ECDA158A317500CEDD41 /* DCTNetworkActivityIndicatorController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		24F6ECA3158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController */ = {
+		2437B76915B97F4400750117 /* DCTNetworkActivityIndicatorController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24F6ECC8158A2EAA00CEDD41 /* Build configuration list for PBXNativeTarget "DCTNetworkActivityIndicatorController" */;
+			buildConfigurationList = 2437B77315B97F4400750117 /* Build configuration list for PBXNativeTarget "DCTNetworkActivityIndicatorController" */;
 			buildPhases = (
-				24F6ECA0158A2EA900CEDD41 /* Sources */,
-				24F6ECA1158A2EA900CEDD41 /* Frameworks */,
-				24F6ECA2158A2EA900CEDD41 /* Headers */,
+				2437B76615B97F4400750117 /* Sources */,
+				2437B76715B97F4400750117 /* Frameworks */,
+				2437B76815B97F4400750117 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -150,7 +140,7 @@
 			);
 			name = DCTNetworkActivityIndicatorController;
 			productName = DCTNetworkActivityIndicatorController;
-			productReference = 24F6ECA4158A2EA900CEDD41 /* libDCTNetworkActivityIndicatorController.a */;
+			productReference = 2437B76A15B97F4400750117 /* libDCTNetworkActivityIndicatorController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		24F6ECB3158A2EA900CEDD41 /* DCTNetworkActivityIndicatorControllerTests */ = {
@@ -165,7 +155,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				24F6ECBB158A2EAA00CEDD41 /* PBXTargetDependency */,
 			);
 			name = DCTNetworkActivityIndicatorControllerTests;
 			productName = DCTNetworkActivityIndicatorControllerTests;
@@ -193,7 +182,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				24F6ECA3158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController */,
+				2437B76915B97F4400750117 /* DCTNetworkActivityIndicatorController */,
 				24F6ECB3158A2EA900CEDD41 /* DCTNetworkActivityIndicatorControllerTests */,
 			);
 		};
@@ -227,11 +216,11 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		24F6ECA0158A2EA900CEDD41 /* Sources */ = {
+		2437B76615B97F4400750117 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24F6ECAE158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m in Sources */,
+				2437B77615B97F7E00750117 /* DCTNetworkActivityIndicatorController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,14 +234,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		24F6ECBB158A2EAA00CEDD41 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 24F6ECA3158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController */;
-			targetProxy = 24F6ECBA158A2EAA00CEDD41 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		24F6ECC0158A2EAA00CEDD41 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -265,6 +246,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2437B77415B97F4400750117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				DSTROOT = /tmp/DCTNetworkActivityIndicatorController.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2437B77515B97F4400750117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				DSTROOT = /tmp/DCTNetworkActivityIndicatorController.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		24F6ECC6158A2EAA00CEDD41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -311,32 +320,6 @@
 			};
 			name = Release;
 		};
-		24F6ECC9158A2EAA00CEDD41 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/DCTNetworkActivityIndicatorController.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		24F6ECCA158A2EAA00CEDD41 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/DCTNetworkActivityIndicatorController.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		24F6ECCC158A2EAA00CEDD41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -370,20 +353,19 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2437B77315B97F4400750117 /* Build configuration list for PBXNativeTarget "DCTNetworkActivityIndicatorController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2437B77415B97F4400750117 /* Debug */,
+				2437B77515B97F4400750117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		24F6EC9E158A2EA900CEDD41 /* Build configuration list for PBXProject "DCTNetworkActivityIndicatorController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24F6ECC6158A2EAA00CEDD41 /* Debug */,
 				24F6ECC7158A2EAA00CEDD41 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		24F6ECC8158A2EAA00CEDD41 /* Build configuration list for PBXNativeTarget "DCTNetworkActivityIndicatorController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24F6ECC9158A2EAA00CEDD41 /* Debug */,
-				24F6ECCA158A2EAA00CEDD41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
