@@ -249,6 +249,7 @@
 		2437B77415B97F4400750117 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LIBRARY = "libc++";
 				DSTROOT = /tmp/DCTNetworkActivityIndicatorController.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -263,6 +264,7 @@
 		2437B77515B97F4400750117 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LIBRARY = "libc++";
 				DSTROOT = /tmp/DCTNetworkActivityIndicatorController.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

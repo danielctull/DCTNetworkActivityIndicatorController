@@ -88,7 +88,7 @@ static DCTNetworkActivityIndicatorController *sharedInstance = nil;
 }
 
 - (NSString *)description {
-	return [NSString stringWithFormat:@"<%@ %p; networkActivity = %i>", NSStringFromClass([self class]), self, self.networkActivity];
+	return [NSString stringWithFormat:@"<%@ %p; networkActivity = %@>", NSStringFromClass([self class]), self, @(self.networkActivity)];
 }
 
 @end
