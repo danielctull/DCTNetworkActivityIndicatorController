@@ -6,8 +6,8 @@
 //  Copyright (c) 2011 Daniel Tull. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+@import Foundation;
+@import UIKit;
 
 #ifndef dctnetworkactivityindicatorcontroller
 #define dctnetworkactivityindicatorcontroller_1_0       10000
