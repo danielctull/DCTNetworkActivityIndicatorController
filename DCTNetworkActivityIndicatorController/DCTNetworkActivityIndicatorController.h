@@ -9,24 +9,37 @@
 @import Foundation;
 @import UIKit;
 
-#ifndef dctnetworkactivityindicatorcontroller
-#define dctnetworkactivityindicatorcontroller_1_0       10000
-#define dctnetworkactivityindicatorcontroller_1_0_1     10001
-#define dctnetworkactivityindicatorcontroller_1_0_2     10002
-#define dctnetworkactivityindicatorcontroller_1_0_3     10003
-#define dctnetworkactivityindicatorcontroller_1_1		10100
-#define dctnetworkactivityindicatorcontroller           dctnetworkactivityindicatorcontroller_1_1
-#endif
-
+/**
+ *  This notification is posted when networkActivity has changed.
+ */
 extern NSString *const DCTNetworkActivityIndicatorControllerNetworkActivityChangedNotification;
 
+/**
+ *  Controls the network activity indicator.
+ */
 @interface DCTNetworkActivityIndicatorController : NSObject
 
-+ (DCTNetworkActivityIndicatorController *)sharedNetworkActivityIndicatorController;
+/**
+ *  Returns a single instance of the controller, that should be used to increment
+ *  and decrement the activity.
+ *
+ *  @return Shared controller.
+ */
++ (instancetype)sharedNetworkActivityIndicatorController;
 
+/**
+ *  The current count of network activity. This property is obserservable. 
+ */
 @property (nonatomic, readonly) NSUInteger networkActivity;
 
+/**
+ *  Call this when the networking is complete.
+ */
 - (void)decrementNetworkActivity;
+
+/**
+ *  Call this when the networking begins.
+ */
 - (void)incrementNetworkActivity;
 
 @end
