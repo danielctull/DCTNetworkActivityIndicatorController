@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2437B77615B97F7E00750117 /* DCTNetworkActivityIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F6ECAD158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m */; };
 		2437B77715B97F8000750117 /* DCTNetworkActivityIndicatorController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24F6ECAC158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.h */; };
+		244DE8CD19A9229400A91DC7 /* DCTNetworkActivityIndicatorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F6ECAC158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244DE8CE19A9229A00A91DC7 /* DCTNetworkActivityIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F6ECAD158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,12 +37,21 @@
 		244DE8AE19A921BB00A91DC7 /* OS X Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "OS X Framework.xcconfig"; sourceTree = "<group>"; };
 		244DE8AF19A921BB00A91DC7 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		244DE8B019A921BB00A91DC7 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		244DE8B619A9224300A91DC7 /* DCTNetworkActivityIndicatorController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCTNetworkActivityIndicatorController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		244DE8CC19A9226300A91DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24F6ECAC158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTNetworkActivityIndicatorController.h; sourceTree = "<group>"; };
 		24F6ECAD158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTNetworkActivityIndicatorController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2437B76715B97F4400750117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244DE8B219A9224300A91DC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				2437B76A15B97F4400750117 /* libDCTNetworkActivityIndicatorController.a */,
+				244DE8B619A9224300A91DC7 /* DCTNetworkActivityIndicatorController.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,11 +100,23 @@
 			children = (
 				24F6ECAC158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.h */,
 				24F6ECAD158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m */,
+				244DE8CC19A9226300A91DC7 /* Info.plist */,
 			);
 			path = DCTNetworkActivityIndicatorController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		244DE8B319A9224300A91DC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244DE8CD19A9229400A91DC7 /* DCTNetworkActivityIndicatorController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		2437B76915B97F4400750117 /* DCTNetworkActivityIndicatorController */ = {
@@ -113,6 +137,24 @@
 			productReference = 2437B76A15B97F4400750117 /* libDCTNetworkActivityIndicatorController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		244DE8B519A9224300A91DC7 /* DCTNetworkActivityIndicatorController iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 244DE8C619A9224300A91DC7 /* Build configuration list for PBXNativeTarget "DCTNetworkActivityIndicatorController iOS" */;
+			buildPhases = (
+				244DE8B119A9224300A91DC7 /* Sources */,
+				244DE8B219A9224300A91DC7 /* Frameworks */,
+				244DE8B319A9224300A91DC7 /* Headers */,
+				244DE8B419A9224300A91DC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DCTNetworkActivityIndicatorController iOS";
+			productName = "DCTNetworkActivityIndicatorController iOS";
+			productReference = 244DE8B619A9224300A91DC7 /* DCTNetworkActivityIndicatorController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -122,6 +164,11 @@
 				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Daniel Tull";
+				TargetAttributes = {
+					244DE8B519A9224300A91DC7 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
 			};
 			buildConfigurationList = 24F6EC9E158A2EA900CEDD41 /* Build configuration list for PBXProject "DCTNetworkActivityIndicatorController" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -136,9 +183,20 @@
 			projectRoot = "";
 			targets = (
 				2437B76915B97F4400750117 /* DCTNetworkActivityIndicatorController */,
+				244DE8B519A9224300A91DC7 /* DCTNetworkActivityIndicatorController iOS */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		244DE8B419A9224300A91DC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		24493EE418CFB2C0003A1AA5 /* Documentation */ = {
@@ -166,6 +224,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		244DE8B119A9224300A91DC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244DE8CE19A9229A00A91DC7 /* DCTNetworkActivityIndicatorController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -180,6 +246,30 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 244DE8AC19A921BB00A91DC7 /* iOS Static Library.xcconfig */;
 			buildSettings = {
+			};
+			name = Release;
+		};
+		244DE8C719A9224300A91DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244DE8AB19A921BB00A91DC7 /* iOS Framework.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				PRODUCT_NAME = DCTNetworkActivityIndicatorController;
+			};
+			name = Debug;
+		};
+		244DE8C819A9224300A91DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244DE8AB19A921BB00A91DC7 /* iOS Framework.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				PRODUCT_NAME = DCTNetworkActivityIndicatorController;
 			};
 			name = Release;
 		};
@@ -208,6 +298,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		244DE8C619A9224300A91DC7 /* Build configuration list for PBXNativeTarget "DCTNetworkActivityIndicatorController iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244DE8C719A9224300A91DC7 /* Debug */,
+				244DE8C819A9224300A91DC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		24F6EC9E158A2EA900CEDD41 /* Build configuration list for PBXProject "DCTNetworkActivityIndicatorController" */ = {
 			isa = XCConfigurationList;
