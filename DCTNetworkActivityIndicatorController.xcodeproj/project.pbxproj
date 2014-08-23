@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2437B76B15B97F4400750117 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F6ECA7158A2EA900CEDD41 /* Foundation.framework */; };
 		2437B77615B97F7E00750117 /* DCTNetworkActivityIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F6ECAD158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m */; };
 		2437B77715B97F8000750117 /* DCTNetworkActivityIndicatorController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24F6ECAC158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.h */; };
 /* End PBXBuildFile section */
@@ -27,12 +26,17 @@
 
 /* Begin PBXFileReference section */
 		2437B76A15B97F4400750117 /* libDCTNetworkActivityIndicatorController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCTNetworkActivityIndicatorController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		244F132E17FEB2580016E94E /* Architectures.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Architectures.xcconfig; sourceTree = "<group>"; };
-		24F6ECA7158A2EA900CEDD41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		244DE8A819A921BB00A91DC7 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		244DE8A919A921BB00A91DC7 /* iOS Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Application.xcconfig"; sourceTree = "<group>"; };
+		244DE8AA19A921BB00A91DC7 /* iOS Bundle.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Bundle.xcconfig"; sourceTree = "<group>"; };
+		244DE8AB19A921BB00A91DC7 /* iOS Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Framework.xcconfig"; sourceTree = "<group>"; };
+		244DE8AC19A921BB00A91DC7 /* iOS Static Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Static Library.xcconfig"; sourceTree = "<group>"; };
+		244DE8AD19A921BB00A91DC7 /* iOS Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Tests.xcconfig"; sourceTree = "<group>"; };
+		244DE8AE19A921BB00A91DC7 /* OS X Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "OS X Framework.xcconfig"; sourceTree = "<group>"; };
+		244DE8AF19A921BB00A91DC7 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		244DE8B019A921BB00A91DC7 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		24F6ECAC158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTNetworkActivityIndicatorController.h; sourceTree = "<group>"; };
 		24F6ECAD158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTNetworkActivityIndicatorController.m; sourceTree = "<group>"; };
-		24F6ECB5158A2EA900CEDD41 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		24F6ECB7158A2EA900CEDD41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,19 +44,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2437B76B15B97F4400750117 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		244DE8A719A921BB00A91DC7 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				244DE8A819A921BB00A91DC7 /* Debug.xcconfig */,
+				244DE8A919A921BB00A91DC7 /* iOS Application.xcconfig */,
+				244DE8AA19A921BB00A91DC7 /* iOS Bundle.xcconfig */,
+				244DE8AB19A921BB00A91DC7 /* iOS Framework.xcconfig */,
+				244DE8AC19A921BB00A91DC7 /* iOS Static Library.xcconfig */,
+				244DE8AD19A921BB00A91DC7 /* iOS Tests.xcconfig */,
+				244DE8AE19A921BB00A91DC7 /* OS X Framework.xcconfig */,
+				244DE8AF19A921BB00A91DC7 /* Release.xcconfig */,
+				244DE8B019A921BB00A91DC7 /* Shared.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
 		24F6EC99158A2EA900CEDD41 = {
 			isa = PBXGroup;
 			children = (
-				244F132E17FEB2580016E94E /* Architectures.xcconfig */,
 				24F6ECA9158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController */,
-				24F6ECA6158A2EA900CEDD41 /* Frameworks */,
+				244DE8A719A921BB00A91DC7 /* Configurations */,
 				24F6ECA5158A2EA900CEDD41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,16 +81,6 @@
 				2437B76A15B97F4400750117 /* libDCTNetworkActivityIndicatorController.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		24F6ECA6158A2EA900CEDD41 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				24F6ECA7158A2EA900CEDD41 /* Foundation.framework */,
-				24F6ECB5158A2EA900CEDD41 /* SenTestingKit.framework */,
-				24F6ECB7158A2EA900CEDD41 /* UIKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		24F6ECA9158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController */ = {
@@ -163,106 +171,29 @@
 /* Begin XCBuildConfiguration section */
 		2437B77415B97F4400750117 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 244F132E17FEB2580016E94E /* Architectures.xcconfig */;
+			baseConfigurationReference = 244DE8AC19A921BB00A91DC7 /* iOS Static Library.xcconfig */;
 			buildSettings = {
-				CLANG_CXX_LIBRARY = "libc++";
-				DSTROOT = /tmp/DCTNetworkActivityIndicatorController.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		2437B77515B97F4400750117 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 244F132E17FEB2580016E94E /* Architectures.xcconfig */;
+			baseConfigurationReference = 244DE8AC19A921BB00A91DC7 /* iOS Static Library.xcconfig */;
 			buildSettings = {
-				CLANG_CXX_LIBRARY = "libc++";
-				DSTROOT = /tmp/DCTNetworkActivityIndicatorController.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		24F6ECC6158A2EAA00CEDD41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244DE8A819A921BB00A91DC7 /* Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				WARNING_CFLAGS = (
-					"-Weverything",
-					"-Wno-objc-missing-property-synthesis",
-				);
 			};
 			name = Debug;
 		};
 		24F6ECC7158A2EAA00CEDD41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244DE8AF19A921BB00A91DC7 /* Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-				WARNING_CFLAGS = (
-					"-Weverything",
-					"-Wno-objc-missing-property-synthesis",
-				);
 			};
 			name = Release;
 		};

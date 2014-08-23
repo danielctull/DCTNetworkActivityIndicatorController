@@ -1,6 +1,6 @@
 //
 //  DCTNetworkActivityIndicatorController.h
-//  DCTConnectionController
+//  DCTNetworkActivityIndicatorController
 //
 //  Created by Daniel Tull on 07.08.2011.
 //  Copyright (c) 2011 Daniel Tull. All rights reserved.
@@ -8,6 +8,10 @@
 
 @import Foundation;
 @import UIKit;
+
+//! Project version number and string for DCTNetworkActivityIndicatorController.
+FOUNDATION_EXPORT double DCTNetworkActivityIndicatorControllerVersionNumber;
+FOUNDATION_EXPORT const unsigned char DCTNetworkActivityIndicatorControllerVersionString[];
 
 /**
  *  This notification is posted when networkActivity has changed.
