@@ -277,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 244DE8A819A921BB00A91DC7 /* Debug.xcconfig */;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -306,6 +307,7 @@
 				244DE8C819A9224300A91DC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24F6EC9E158A2EA900CEDD41 /* Build configuration list for PBXProject "DCTNetworkActivityIndicatorController" */ = {
 			isa = XCConfigurationList;
