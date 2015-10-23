@@ -163,7 +163,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Daniel Tull";
 				TargetAttributes = {
 					244DE8B519A9224300A91DC7 = {
@@ -269,7 +269,6 @@
 			baseConfigurationReference = 244DE8AB19A921BB00A91DC7 /* iOS Framework.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				PRODUCT_NAME = DCTNetworkActivityIndicatorController;
@@ -281,7 +280,6 @@
 			baseConfigurationReference = 244DE8AB19A921BB00A91DC7 /* iOS Framework.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				PRODUCT_NAME = DCTNetworkActivityIndicatorController;
@@ -292,7 +290,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 244DE8A819A921BB00A91DC7 /* Debug.xcconfig */;
 			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.danieltull.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Debug;
@@ -301,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 244DE8AF19A921BB00A91DC7 /* Release.xcconfig */;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.danieltull.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Release;
