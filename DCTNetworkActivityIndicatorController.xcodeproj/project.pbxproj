@@ -28,17 +28,34 @@
 
 /* Begin PBXFileReference section */
 		2437B76A15B97F4400750117 /* libDCTNetworkActivityIndicatorController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCTNetworkActivityIndicatorController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		244DE8A819A921BB00A91DC7 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		244DE8A919A921BB00A91DC7 /* iOS Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Application.xcconfig"; sourceTree = "<group>"; };
-		244DE8AA19A921BB00A91DC7 /* iOS Bundle.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Bundle.xcconfig"; sourceTree = "<group>"; };
-		244DE8AB19A921BB00A91DC7 /* iOS Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Framework.xcconfig"; sourceTree = "<group>"; };
-		244DE8AC19A921BB00A91DC7 /* iOS Static Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Static Library.xcconfig"; sourceTree = "<group>"; };
-		244DE8AD19A921BB00A91DC7 /* iOS Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Tests.xcconfig"; sourceTree = "<group>"; };
-		244DE8AE19A921BB00A91DC7 /* OS X Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "OS X Framework.xcconfig"; sourceTree = "<group>"; };
-		244DE8AF19A921BB00A91DC7 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		244DE8B019A921BB00A91DC7 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		244DE8B619A9224300A91DC7 /* DCTNetworkActivityIndicatorController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCTNetworkActivityIndicatorController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		244DE8CC19A9226300A91DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24CCFF2E1D9EA3DA00228331 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		24CCFF311D9EA3DA00228331 /* iOS Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Application.xcconfig"; sourceTree = "<group>"; };
+		24CCFF321D9EA3DA00228331 /* iOS Bundle.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Bundle.xcconfig"; sourceTree = "<group>"; };
+		24CCFF331D9EA3DA00228331 /* iOS Extension.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Extension.xcconfig"; sourceTree = "<group>"; };
+		24CCFF341D9EA3DA00228331 /* iOS Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Framework.xcconfig"; sourceTree = "<group>"; };
+		24CCFF351D9EA3DA00228331 /* iOS Static Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Static Library.xcconfig"; sourceTree = "<group>"; };
+		24CCFF361D9EA3DA00228331 /* iOS Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Tests.xcconfig"; sourceTree = "<group>"; };
+		24CCFF371D9EA3DA00228331 /* iOS UI Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS UI Tests.xcconfig"; sourceTree = "<group>"; };
+		24CCFF381D9EA3DA00228331 /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
+		24CCFF3A1D9EA3DA00228331 /* macOS Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS Application.xcconfig"; sourceTree = "<group>"; };
+		24CCFF3B1D9EA3DA00228331 /* macOS Extension.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS Extension.xcconfig"; sourceTree = "<group>"; };
+		24CCFF3C1D9EA3DA00228331 /* macOS Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS Framework.xcconfig"; sourceTree = "<group>"; };
+		24CCFF3D1D9EA3DA00228331 /* macOS Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS Tests.xcconfig"; sourceTree = "<group>"; };
+		24CCFF3E1D9EA3DA00228331 /* macOS UI Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS UI Tests.xcconfig"; sourceTree = "<group>"; };
+		24CCFF3F1D9EA3DA00228331 /* macOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = macOS.xcconfig; sourceTree = "<group>"; };
+		24CCFF401D9EA3DA00228331 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		24CCFF491D9EA3DA00228331 /* tvOS Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS Application.xcconfig"; sourceTree = "<group>"; };
+		24CCFF4A1D9EA3DA00228331 /* tvOS Extension.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS Extension.xcconfig"; sourceTree = "<group>"; };
+		24CCFF4B1D9EA3DA00228331 /* tvOS Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS Framework.xcconfig"; sourceTree = "<group>"; };
+		24CCFF4C1D9EA3DA00228331 /* tvOS Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS Tests.xcconfig"; sourceTree = "<group>"; };
+		24CCFF4D1D9EA3DA00228331 /* tvOS UI Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS UI Tests.xcconfig"; sourceTree = "<group>"; };
+		24CCFF4E1D9EA3DA00228331 /* tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = tvOS.xcconfig; sourceTree = "<group>"; };
+		24CCFF501D9EA3DA00228331 /* watchOS Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS Application.xcconfig"; sourceTree = "<group>"; };
+		24CCFF511D9EA3DA00228331 /* watchOS Extension.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS Extension.xcconfig"; sourceTree = "<group>"; };
+		24CCFF521D9EA3DA00228331 /* watchOS Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS Framework.xcconfig"; sourceTree = "<group>"; };
+		24CCFF531D9EA3DA00228331 /* watchOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = watchOS.xcconfig; sourceTree = "<group>"; };
 		24F6ECAC158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTNetworkActivityIndicatorController.h; sourceTree = "<group>"; };
 		24F6ECAD158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTNetworkActivityIndicatorController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,27 +78,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		244DE8A719A921BB00A91DC7 /* Configurations */ = {
+		24CCFF2C1D9EA3DA00228331 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				244DE8A819A921BB00A91DC7 /* Debug.xcconfig */,
-				244DE8A919A921BB00A91DC7 /* iOS Application.xcconfig */,
-				244DE8AA19A921BB00A91DC7 /* iOS Bundle.xcconfig */,
-				244DE8AB19A921BB00A91DC7 /* iOS Framework.xcconfig */,
-				244DE8AC19A921BB00A91DC7 /* iOS Static Library.xcconfig */,
-				244DE8AD19A921BB00A91DC7 /* iOS Tests.xcconfig */,
-				244DE8AE19A921BB00A91DC7 /* OS X Framework.xcconfig */,
-				244DE8AF19A921BB00A91DC7 /* Release.xcconfig */,
-				244DE8B019A921BB00A91DC7 /* Shared.xcconfig */,
+				24CCFF2E1D9EA3DA00228331 /* Debug.xcconfig */,
+				24CCFF301D9EA3DA00228331 /* iOS */,
+				24CCFF391D9EA3DA00228331 /* macOS */,
+				24CCFF401D9EA3DA00228331 /* Release.xcconfig */,
+				24CCFF481D9EA3DA00228331 /* tvOS */,
+				24CCFF4F1D9EA3DA00228331 /* watchOS */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		24CCFF301D9EA3DA00228331 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				24CCFF311D9EA3DA00228331 /* iOS Application.xcconfig */,
+				24CCFF321D9EA3DA00228331 /* iOS Bundle.xcconfig */,
+				24CCFF331D9EA3DA00228331 /* iOS Extension.xcconfig */,
+				24CCFF341D9EA3DA00228331 /* iOS Framework.xcconfig */,
+				24CCFF351D9EA3DA00228331 /* iOS Static Library.xcconfig */,
+				24CCFF361D9EA3DA00228331 /* iOS Tests.xcconfig */,
+				24CCFF371D9EA3DA00228331 /* iOS UI Tests.xcconfig */,
+				24CCFF381D9EA3DA00228331 /* iOS.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		24CCFF391D9EA3DA00228331 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				24CCFF3A1D9EA3DA00228331 /* macOS Application.xcconfig */,
+				24CCFF3B1D9EA3DA00228331 /* macOS Extension.xcconfig */,
+				24CCFF3C1D9EA3DA00228331 /* macOS Framework.xcconfig */,
+				24CCFF3D1D9EA3DA00228331 /* macOS Tests.xcconfig */,
+				24CCFF3E1D9EA3DA00228331 /* macOS UI Tests.xcconfig */,
+				24CCFF3F1D9EA3DA00228331 /* macOS.xcconfig */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		24CCFF481D9EA3DA00228331 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				24CCFF491D9EA3DA00228331 /* tvOS Application.xcconfig */,
+				24CCFF4A1D9EA3DA00228331 /* tvOS Extension.xcconfig */,
+				24CCFF4B1D9EA3DA00228331 /* tvOS Framework.xcconfig */,
+				24CCFF4C1D9EA3DA00228331 /* tvOS Tests.xcconfig */,
+				24CCFF4D1D9EA3DA00228331 /* tvOS UI Tests.xcconfig */,
+				24CCFF4E1D9EA3DA00228331 /* tvOS.xcconfig */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		24CCFF4F1D9EA3DA00228331 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				24CCFF501D9EA3DA00228331 /* watchOS Application.xcconfig */,
+				24CCFF511D9EA3DA00228331 /* watchOS Extension.xcconfig */,
+				24CCFF521D9EA3DA00228331 /* watchOS Framework.xcconfig */,
+				24CCFF531D9EA3DA00228331 /* watchOS.xcconfig */,
+			);
+			path = watchOS;
 			sourceTree = "<group>";
 		};
 		24F6EC99158A2EA900CEDD41 = {
 			isa = PBXGroup;
 			children = (
 				24F6ECA9158A2EA900CEDD41 /* DCTNetworkActivityIndicatorController */,
-				244DE8A719A921BB00A91DC7 /* Configurations */,
+				24CCFF2C1D9EA3DA00228331 /* Configurations */,
 				24F6ECA5158A2EA900CEDD41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -252,54 +318,48 @@
 /* Begin XCBuildConfiguration section */
 		2437B77415B97F4400750117 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 244DE8AC19A921BB00A91DC7 /* iOS Static Library.xcconfig */;
+			baseConfigurationReference = 24CCFF351D9EA3DA00228331 /* iOS Static Library.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		2437B77515B97F4400750117 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 244DE8AC19A921BB00A91DC7 /* iOS Static Library.xcconfig */;
+			baseConfigurationReference = 24CCFF351D9EA3DA00228331 /* iOS Static Library.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
 		};
 		244DE8C719A9224300A91DC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 244DE8AB19A921BB00A91DC7 /* iOS Framework.xcconfig */;
+			baseConfigurationReference = 24CCFF341D9EA3DA00228331 /* iOS Framework.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
 				PRODUCT_NAME = DCTNetworkActivityIndicatorController;
 			};
 			name = Debug;
 		};
 		244DE8C819A9224300A91DC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 244DE8AB19A921BB00A91DC7 /* iOS Framework.xcconfig */;
+			baseConfigurationReference = 24CCFF341D9EA3DA00228331 /* iOS Framework.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
 				PRODUCT_NAME = DCTNetworkActivityIndicatorController;
 			};
 			name = Release;
 		};
 		24F6ECC6158A2EAA00CEDD41 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 244DE8A819A921BB00A91DC7 /* Debug.xcconfig */;
+			baseConfigurationReference = 24CCFF2E1D9EA3DA00228331 /* Debug.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.danieltull.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Debug;
 		};
 		24F6ECC7158A2EAA00CEDD41 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 244DE8AF19A921BB00A91DC7 /* Release.xcconfig */;
+			baseConfigurationReference = 24CCFF401D9EA3DA00228331 /* Release.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.danieltull.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Release;
